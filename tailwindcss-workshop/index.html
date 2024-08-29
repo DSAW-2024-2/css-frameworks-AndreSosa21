@@ -3,31 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--download tailwind-->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
+    <style>
+      .title_font{
+        font-family: 'DM Serif Text',serif;
+      }
+      .header_font{
+        font-family: 'Roboto Mono';
+      }
+      
+    </style>
   </head>
-  <body> 
-    Your Result
-    76
-    of 100
-  
-    Great
-    You scored higher than 65% of the people who have taken these tests.
-  
-    Summary
-  
-    Reaction
-    80 / 100
-  
-    Memory
-    92 / 100
-  
-    Verbal
-    61 / 100
-  
-    Visual
-    72 / 100
-  
-    Continue
+  <body>
+    <!--decorative forms-->
+    <div class=" flex justify-between bg-[#f0f0f0] w-screen bg">
+      <img class="fixed left-14 max-xl:hidden" src="../assets/images/image1final.png">
+      <img class="fixed right-0 max-xl:hidden"src="../assets/images/image2final.png">
+      <img class="fixed right-16 bottom-0 max-xl:hidden" src="../assets/images/image3final.png">
+      <img class="fixed left-16 bottom-0 max-xl:hidden" src="../assets/images/image4final.png">
+    </div>
 
+    <!--card_container-->
+    <div class="bg-[#f0f0f0] flex items-center justify-center w-screen min-h-screen">
+      <div class="bg-[#fdf2e9] xl:w-11/12 xl:h-3/4 shadow-[4px_20px_20px_rgba(0,0,0,0.1)] shadow-gray-400/30 flex items-center justify-center md:h-screen md:w-screen max-sm:h-auto max-sm:w-screen">
+        <!--card-->  
+        <div class=" bg-white flex h-auto w-[35%] mt-9 mb-9 rounded-2xl max-xl:w-3/5 max-xl:h-auto max-md:mt-5 max-md:mb-5 max-sm:flex-col max-sm:w-[90%] max-sm:max-h-full max:ms:h-auto">
+          <!--image_container--> 
+            <div class="w-[50%] max-sm:w-full">
+              <img class=" hidden sm:block size-full rounded-s-xl" src="../assets/images/image-product-desktop.jpg">
+              <img class="block sm:hidden rounded-t-lg" src="../assets/images/image-product-mobile.jpg">
+            </div>
+          <!--content--> 
+          <div class="bg-white p-6 rounded w-[50%]  max-sm:w-full max-sm:h-auto">
+              <h3 class="header_font text-xs max-sm:whitespace-normal">P E R F U M E</h3>
+              <h1 class="title_font text-2xl font-bold whitespace-pre-line leading-6 mt-1 max-sm:whitespace-normal max-sm:text-4xl max-sm:pt-1">
+                Gabrielle 
+                escense Eau 
+                De Parfum</h1>
+              <p class="font-sans whitespace-pre-line text-gray-500 text-xs  leading-5 max-sm:whitespace-normal max-sm:text-xl max-sm:pt-6">
+                A floral,solar and voluptuous
+                interpretation composed by 
+                Oliver Polge,Perfumer-Creator
+                for the House of CHANEL.
+              </p>
+              <!--add_to_cart--> 
+              <h1 class="title_font text-[#3f846b] font-extrabold text-3xl pt-6">$149.99 
+                <s class="font-sans text-xs text-gray-500 font-normal ml-2"style="vertical-align: 6px;">$169.99</s></h1>
+              <button class="bg-[#3f846b] w-auto h-8 rounded-xl text-center text-white text-xs mt-3 flex items-center justify-center space-x-2"> 
+                <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/>
+                </svg>
+                <p>Add to cart.</p></div>
+              </button>
+          </div>
+        </div>
+    </div>
   </body>
 </html>
